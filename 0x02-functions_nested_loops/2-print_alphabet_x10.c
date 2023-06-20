@@ -1,11 +1,13 @@
 #include "main.h"
 /**
-  *2-print_alphabet_x10.c - prints alphabets 10 times
+  *print_alphabet_x10 - prints alphabets 10 times
+  *Description: prints alphabets 10 times
   *Return: void
   */
 void print_alphabet_x10(void)
 {
-	int n = 97, i = 0;
+	int n = 97;
+	int i = 0;
 
 	while (i < 10)
 	{
