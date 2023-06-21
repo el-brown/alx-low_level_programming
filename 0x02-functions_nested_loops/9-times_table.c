@@ -5,13 +5,13 @@
   */
 void times_table(void)
 {
-	int m, n;
-	int o = (m * n);
+	int m, n, o;
 
 	for (m = 48; m <= 57; m++)
 	{
 		for (n = 48; n <= 57; n++)
 		{
+			o = (m * n);
 			_putchar(o);
 			if (n == 57)
 			{
