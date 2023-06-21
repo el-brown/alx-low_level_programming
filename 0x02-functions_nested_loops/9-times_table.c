@@ -22,8 +22,15 @@ void times_table(void)
 			}
 			else
 			{
+				if ((o / 10) == 0)
+				{
+					_putchar((o % 10) + 48);
+				}
+				else
+				{
 				_putchar((o / 10) + 48);
 				_putchar((o % 10) + 48);
+				}
 			}
 			if (n == 9)
 			{
