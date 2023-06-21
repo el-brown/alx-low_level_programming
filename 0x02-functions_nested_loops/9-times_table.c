@@ -15,21 +15,32 @@ void times_table(void)
 			if (m == 0)
 			{
 				_putchar(48);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			else if (m == 1)
 			{
 				_putchar(n + 48);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			else
 			{
 				if ((o / 10) == 0)
 				{
 					_putchar((o % 10) + 48);
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else
 				{
 				_putchar((o / 10) + 48);
 				_putchar((o % 10) + 48);
+				_putchar(',');
+				_putchar(' ');
 				}
 			}
 			if (n == 9)
@@ -37,8 +48,6 @@ void times_table(void)
 				_putchar('\n');
 				continue;
 			}
-			_putchar(',');
-			_putchar(' ');
 		}
 	}
 }
