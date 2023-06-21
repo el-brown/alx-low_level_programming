@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-  *_islower - is our function
-  *Return: 1 if it is lowercase and 0 if else
+  *_isalpha - is our function
+  *Return: 1 if it is an alphabet and 0 if else
   *@c: the argument that is a number of a letter in ascii table
   */
-int _islower(int c)
+int _isalpha(int c);
 {
 	if ((c <= 122 && c >= 97) || (c <= 90 && c >= 65))
 	{
