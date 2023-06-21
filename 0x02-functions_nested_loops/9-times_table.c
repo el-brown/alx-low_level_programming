@@ -25,9 +25,10 @@ void times_table(void)
 				if ((o / 10) == 0)
 				{
 					_putchar((o % 10) + 48);
-				{
+				}
 				_putchar((o / 10) + 48);
 				_putchar((o % 10) + 48);
+			}
 			if (n == 9)
 			{
 				_putchar('\n');
