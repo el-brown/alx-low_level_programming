@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
   *times_table - multiplication table
   *Return: void
