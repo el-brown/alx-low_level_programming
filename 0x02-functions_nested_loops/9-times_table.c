@@ -12,7 +12,11 @@ void times_table(void)
 		for (n = 0; n <= 9; n++)
 		{
 			o = (m * n);
-			if (m == 1)
+			if (m == 0)
+			{
+				_putchar(48);
+			}
+			else if (m == 1)
 			{
 				_putchar(n);
 			}
@@ -23,6 +27,7 @@ void times_table(void)
 			}
 			if (n == 9)
 			{
+				_putchar('\n');
 				continue;
 			}
 			_putchar(',');
