@@ -18,6 +18,10 @@ void jack_bauer(void)
 			{
 				for (p = 48; p <= 57; p++)
 				{
+					if (m >= 50 && n >= 52)
+					{
+						break;
+					}
 					_putchar(m);
 					_putchar(n);
 					_putchar(':');
@@ -26,10 +30,6 @@ void jack_bauer(void)
 					_putchar('\n');
 				}
 			}
-		}
-		if (m == 50 && n == 51 && o == 53 && p == 57)
-		{
-			break;
 		}
 	}
 }
