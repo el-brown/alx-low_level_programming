@@ -2,6 +2,7 @@
 /**
   *_isupper - checks if the variable is upper case
   *Return: 1 if c is uppercase o otherwise
+  *@c: argument
   */
 int _isupper(int c)
 {
