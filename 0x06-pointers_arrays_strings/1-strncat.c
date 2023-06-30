@@ -11,13 +11,9 @@ char *_strncat(char *dest, char *src, int n)
 	int i = 0, j = 0;
 	
 	while (dset[i++])
-	{
-		j++;
-	}
+	j++;
 	for (i = 0; src[i] && i < n; i++)
-	{
-		dset[j++] = src[i];
-	}
+	dset[j++] = src[i];
 	return (dest);
 }
 
