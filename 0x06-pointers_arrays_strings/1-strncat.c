@@ -2,18 +2,24 @@
 /**
  * *_strncat - concatinates two strings
  *Return: char
- *@dset: argument
+ *@dest: argument
  *@src: argument
  *@n: argument
  */
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j = 0;
-	
-	while (dset[i++])
-	j++;
-	for (i = 0; src[i] && i < n; i++)
-	dset[j++] = src[i];
+
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	while (j < n && src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0'
 	return (dest);
 }
-
