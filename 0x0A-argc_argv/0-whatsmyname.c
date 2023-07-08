@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
-  *whatsmyname - prints program naame
+  *main - prints program naame
   *Return: always 0
   *@argc: argument
   *@argv: argument
   */
-int whatsmyname(int argc, char const *argv[])
+int main(int argc, char const *argv[])
 {
 	(void)argc;
 	printf("%s\n", argv[0]);
