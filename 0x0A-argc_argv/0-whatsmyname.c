@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
-  *main - prints program naame
+  *main - entry point
   *Return: always 0
-  *@argc: argument
-  *@argv: argument
+  *@argc: argument counter
+  *@argv: argument value
   */
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	(void)argc;
 	printf("%s\n", argv[0]);
