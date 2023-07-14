@@ -26,6 +26,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
+	if (s1 == NULL)
+	{
+		s1 = "\0";
+	}
+	else if (s2 == NULL)
+	{
+		s2 = "\0";
+	}
 	for (i = 0; i < l1; i++)
 	{
 		p[i] = s1[i];
