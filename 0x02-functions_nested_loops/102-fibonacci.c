@@ -6,12 +6,11 @@
 int main(void)
 {
 	int i;
-	long a = 1;
-	long b = 2;
+	long a = 0;
+	long b = 1;
 	long f;
 
-	printf("%lo, %lo, ", a, b);
-	for (i = 0; i < 48; i++)
+	for (i = 0; i < 50; i++)
 	{
 		f = a + b;
 		a = b;

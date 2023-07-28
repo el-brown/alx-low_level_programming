@@ -42,7 +42,7 @@ void print_number(int n)
 	}
 	else if (n >= 0 && n <= 9)
 	{
-		_putchar(n + 48);		
+		_putchar(n + 48);
 	}
 	else if (n <= 0 && n >= -9)
 	{
