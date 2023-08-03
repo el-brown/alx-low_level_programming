@@ -3,6 +3,7 @@
  * _sqrt_recursion - find natural square root
  * Return: int
  * @n: argument
+ * @i: argument
  */
 int square(int n, int i);
 int _sqrt_recursion(int n)
@@ -13,7 +14,7 @@ int _sqrt_recursion(int n)
  * square - calculates the square of i
  * Return: int
  * @n: argument
- * @i:argument
+ * @i: argument
  */
 int square(int n, int i)
 {
