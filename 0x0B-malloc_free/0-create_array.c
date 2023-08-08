@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		for (j = 0; j < size - 1; j++)
+		for (j = 0; j < size; j++)
 		{
 			n[j] = c;
 		}
