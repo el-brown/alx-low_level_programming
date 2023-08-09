@@ -9,10 +9,17 @@ int length(char *str);
 
 char *_strdup(char *str)
 {
-	int j;
-	char *ptr = malloc(length(str));
+	int j, size;
+	char *ptr;
 
-	if (str == NULL || ptr == 0)
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	for (size = 0; str[size] != '\0'; size++)
+		;
+	ptr = malloc(size + 1);
+	if (ptr == 0)
 	{
 		return (NULL);
 	}
@@ -22,23 +29,6 @@ char *_strdup(char *str)
 		{
 			ptr[j] = str[j];
 		}
-		return (ptr);
 	}
-}
-
-/**
-  * length - calculates the length of a string
-  *Return: int
-  *@str: argument
-  */
-
-int length(char *str)
-{
-	int i;
-
-	for (i = 1; *str != '\0'; i++)
-	{
-		str++;
-	}
-	return (i);
+	return (ptr);
 }
