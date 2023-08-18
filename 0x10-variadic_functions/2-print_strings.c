@@ -20,7 +20,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(ptr, n);
 	for (i = 0; i < n; i++)
 	{
-		printf("%s%s", (str = va_arg(ptr, char *)) ? str : "(nil)", (i < n - 1) ? (separator ? separator : "") : "\n");
+		printf("%s%s", (str = va_arg(ptr, char *)) ? str : "(nil)",
+				(i < n - 1) ? (separator ? separator : "") : "\n");
 	}
 	va_end(ptr);
 }
