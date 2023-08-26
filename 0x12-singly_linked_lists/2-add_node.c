@@ -26,6 +26,12 @@ list_t *add_node(list_t **head, const char *str)
 		ptr->len = i;
 		ptr->next = NULL;
 
+		if (ptr->str == NULL)
+		{
+			free(ptr);
+			return (NULL);
+		}
+
 		ptr->next = *head;
 		*head = ptr;
 	}
