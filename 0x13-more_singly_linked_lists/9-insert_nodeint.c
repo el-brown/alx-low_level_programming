@@ -2,7 +2,7 @@
 
 /**
   *insert_nodeint_at_index - insrt a node at a specefic position
-k  *Return: pointer to the new node
+  *Return: pointer to the new node
   *@head: argument
   *@idx: argument
   *@n: argument
@@ -17,6 +17,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (ptr1 == NULL || *head == NULL)
 	{
 		return (NULL);
+	}
+	if (!idx)
+	{
+		ptr1->next = ptr->next;
+		ptr->next = ptr1;
+		return (ptr1);
 	}
 	while (i < idx)
 	{
