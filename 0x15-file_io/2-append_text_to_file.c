@@ -20,14 +20,15 @@ int _strlen(char *s)
 	}
 	return (i);
 }
+
 /**
-  *create_file - create file
+  *append_text_to_file - append text to file
   *Return: int
   *@filename: argument
   *@text_content: argument
   */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	ssize_t i = 0, len = _strlen(text_content);
@@ -36,7 +37,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	fd = open(filename, O_WRONLY | )_APPEND);
 	if (fd == -1)
 	{
 		return (-1);
@@ -46,5 +47,5 @@ int create_file(const char *filename, char *text_content)
 		i = write(fd, text_content, len);
 	}
 	close(fd);
-	return (i == len ? 1 : len);
+	return (i == len ? 1 : -1);
 }
