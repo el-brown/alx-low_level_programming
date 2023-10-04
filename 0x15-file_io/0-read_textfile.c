@@ -1,7 +1,7 @@
 #include "main,h"
 
 /**
- * append_text_to_file - append text
+ * read_textfile - append text
  * Return: int
  * @filename: argument
  * @letters: argument
