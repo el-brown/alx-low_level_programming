@@ -17,13 +17,13 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * create_file - create file
+ * append_text_to_file - append file
  * Return: int
  * @filename: argument
  * @text_content: argument
  */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	ssize_t bytes = 0, len = _strlen(text_content);
